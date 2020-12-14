@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA</title>
+    <script src="js/grading.js"></script>
+	<link rel="stylesheet" href = "css/style-gpa.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class = "main"> 
+        <nav> <!--logo-->
+            <div class = "logo">
+                <name>MEK WISARUT</name>
+                <sl>&nbsp;/&nbsp;</sl>
+                <pos>SOFTWARE DEV</pos>
+            </div>
+            <div class = "nav-links">
+                <ul class = "menu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="gpa.html">GPA</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <form class="GPAinput">
+            <h1><b>GPA CALCULATOR</b></h1><br>
+            <div class ="input-button"> 
+                <input id ="subjectName" type="text" placeholder="Your class name">
+                <select id="term" name="term">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select id="grad" name="grad">
+                    <option value="4.0">A</option>
+                    <option value="3.5">B+</option>
+                    <option value="3.0">B</option>
+                    <option value="2.5">C+</option>
+                    <option value="2.0">C</option>
+                    <option value="1.5">D+</option>
+                    <option value="1.0">D</option>
+                    <option value="0">F</option>
+                </select>
+                <input type="submit" id="submitBt" value="summit">
+                <input type="submit" id="overAllCal" value="over cal">
+                <input type="submit" id="majorCal" value="major cal">
+            </div>
+            <table style="width:100%; max-width:1600px;" id="data-table">
+                <tr>
+                  <th>class name</th>
+                  <th>term</th> 
+                  <th>GPA</th>
+                </tr>
+            
+    
+            </table>
+        </form>
+        
+    </section>
+
+    
+</html>
