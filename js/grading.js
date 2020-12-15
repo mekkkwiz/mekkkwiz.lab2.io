@@ -46,7 +46,7 @@ function overAllCal(){
     for(var i = 0; i< data_table.length; i++){
         sum = sum+parseFloat(data_table[i][2])
     }
-    console.log("GPA of "+data_table.length+" subject is "+(sum/data_table.length))
+    alert("GPA of "+data_table.length+" subject is "+(sum/data_table.length))
     return false
 }
 
@@ -64,6 +64,6 @@ function majorCal(){
                 sum = sum+parseFloat(data_table[i][2])
             }
         }
-        console.log("your major GPA is "+(sum/majorCount))
+        alert("your major GPA is "+(sum/majorCount))
         return false
 }
